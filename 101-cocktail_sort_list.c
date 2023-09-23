@@ -12,6 +12,8 @@ void cocktail_sort_list(listint_t **list)
 	listint_t *curr_node;
 	int is_swapped = 1;
 
+	if (list == NULL || *list == NULL || (*list)->next == NULL)
+		return;
 
 	while (is_swapped)
 	{
@@ -28,8 +30,6 @@ void cocktail_sort_list(listint_t **list)
 			curr_node = curr_node->next;
 		}
 
-		if (!is_swapped)
-			break;
 
 		is_swapped = 0;
 		while (curr_node->prev != NULL)
