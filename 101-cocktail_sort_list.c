@@ -30,8 +30,6 @@ void cocktail_sort_list(listint_t **list)
 			curr_node = curr_node->next;
 		}
 
-
-		is_swapped = 0;
 		while (curr_node->prev != NULL)
 		{
 			if (curr_node->n < curr_node->prev->n)
