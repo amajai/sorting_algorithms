@@ -29,4 +29,5 @@ void merge_sort(int *array, size_t size);
 void merge_sorting(int *array, int fdx, int ldx, size_t size);
 void merge(int *array, int fdx, int mid, int ldx);
 int *sorted_array(int *array, int fdx, int mid, int n_arr_l, int n_arr_r);
+void heap_sort(int *array, size_t size);
 #endif
