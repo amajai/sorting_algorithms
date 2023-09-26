@@ -30,4 +30,7 @@ void merge_sorting(int *array, int fdx, int ldx, size_t size);
 void merge(int *array, int fdx, int mid, int ldx);
 int *sorted_array(int *array, int fdx, int mid, int n_arr_l, int n_arr_r);
 void heap_sort(int *array, size_t size);
+void quick_sort_hoare(int *array, size_t size);
+void quick_sorting_hoare(int *array, int fdx, int ldx, size_t size);
+int partition_hoare(int *array, int fdx, int ldx, size_t size);
 #endif
